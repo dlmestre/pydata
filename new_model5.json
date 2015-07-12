@@ -1,0 +1,31 @@
+{
+	"cubes": [
+		{
+			"name": "all_data",
+			"label":"All Data",
+			"dimensions": ["Geo","Indicator"],
+
+			"mappings": {
+				"Geo.year":"all_data.Years",
+                                "Geo.countries":"all_data.Countries",
+                                "Geo.regions":"all_data.Regions",
+                                "Geo.poverty_ratio":"all_data.Poverty Ratio",
+				
+				"Indicator.year":"all_data.Years",
+				"Indicator.countries":"all_data.Countries",
+				"Indicator.population":"all_data.Population",
+				"Indicator.gdp_per_capita":"all_data.GDP per Capita",
+				"Indicator.life_expectancy":"all_data.Life Expectancy"
+			
+                        }
+
+		}
+		],
+	"dimensions": [
+		{"name":"Geo","attributes":["year","countries","regions","poverty_ratio"]},
+		{"name":"Indicator","attributes":["year","countries","population","gdp_per_capita","life_expectancy"]}
+		]
+}
+
+
+
